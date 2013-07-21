@@ -94,8 +94,8 @@ section {
 }
 
 #header article {
-	width: 50%;
-	margin: 9% 2% 0% 0%;
+	width: 56%;
+	margin: 9% 3% 0% 0%;
 	float: right;
 	-webkit-box-shadow: 0 5px 5px rgba(16, 22, 27, 1);
 	-moz-box-shadow: 0 5px 5px rgba(16, 22, 27, 1);
@@ -133,10 +133,11 @@ div#intro_left h1{
 	padding-top: 10px;
 }
 div#intro_left p{
-	font-size: 18px;
+	font-size: 16px;
 	width: 346px;
 	padding: 0px 20px;
-	font-family: "Times New roman",sans-serif; 
+	font-family: "Arial",sans-serif; 
+	word-spacing: 1px;
 }
 #form{
 	float:right;
@@ -155,11 +156,22 @@ div#intro_left p{
 form{
 	padding-top:30px;
 	line-height: 2.5em; 
-	font-family: "Times New roman",sans-serif; 
-	font-size: 18px;
+	font-family: "Arial",sans-serif; 
+	font-size: 16px;
+	word-spacing: 1px;
+}
+form article{
+	line-height: 1.5em;
+	padding-bottom: 10px;
 }
 form strong{
 	color:#ec2498;
+}
+form input[type="text"]{
+	width:295px;
+	height: 24px;
+	border:0;
+	box-shadow: none;
 }
 form #btn{
 	width:260px;
@@ -168,13 +180,30 @@ form #btn{
 	background: #007AAD;
 	font-size: 18px;
 	color:#ffffff;
-	-webkit-box-shadow: inset  -3px -3px rgba(208, 208, 208, 255);
-	-moz-box-shadow: inset  -3px -3px rgba(208, 208, 208, 255);
-	box-shadow: inset  -3px -3px rgba(208, 208, 208, 255);
+	-moz-box-shadow:4px 4px rgba(200, 200, 200, 1);
+	-webkit-box-shadow:4px 4px  rgba(200, 200, 200, 1);
+	box-shadow: 4px 4px  rgba(200, 200, 200, 1);
     font-family: twist-font;
     letter-spacing: 1px;
     border: 0px;
     margin-top: 20px;
-    
+    cursor: pointer;
 
 }
+
+form #btn:hover{
+	 -moz-box-shadow: #6E7849 0px 0px 5px;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-box-shadow: #6E7849 0 0 5px;
+  -webkit-transition: all 0.5s ease;
+   background-color: #007AAD;
+  background-image: -moz-linear-gradient(90deg, #0794cf, #007AAD);
+  background-image: -ms-linear-gradient(90deg, #0794cf, #007AAD);
+  background-image: -o-linear-gradient(90deg, #0794cf, #007AAD);
+  background-image: -webkit-linear-gradient(90deg, #0794cf, #007AAD);
+  background-image: linear-gradient(90deg, #0794cf, #007AAD);
+  box-shadow: #6E7849 0px 0px 5px;
+  transition: all 0.1s ease;
+};
