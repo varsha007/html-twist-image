@@ -17,29 +17,15 @@ section {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	list-style-type: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, footer, header, hgroup,section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
+/* reset stylesheet end */
+/*------Fonts-----*/
 @font-face
 {
 font-family: twist-font;
@@ -58,22 +44,30 @@ body {
 	color:#000000;
 	font-family: twist-font;
 }
+
 strong {	
 	color:#007AAD;
 }
 
 section { 
 	width: 100%;
-
  }
- .wrapper {
+
+ img{
+ 	max-width: 100%;
+ 	height: auto;
+ 	width:auto\9; /* ie8 */
+ }
+
+.wrapper {
 	width: 980px;
 	height: 520px;
 	z-index: 20;
 	margin: 0 auto;
 	background: #ececec;
 }
-#header {
+/*----HEADER----*/
+#header{
 	top:0px;
 	width: inherit;
 	height: 49.375em;
@@ -111,6 +105,10 @@ section {
 #header header em {
 	color: #007AAD;
 	font-size: 60px;
+}
+#box{
+	width:inherit;
+	height: 465px;
 }
 #intro_left{
 	display: block;
@@ -160,19 +158,24 @@ form{
 	font-size: 16px;
 	word-spacing: 1px;
 }
+
 form article{
 	line-height: 1.5em;
 	padding-bottom: 10px;
 }
+
 form strong{
 	color:#ec2498;
 }
+
 form input[type="text"]{
 	width:295px;
 	height: 24px;
 	border:0;
 	box-shadow: none;
 }
+/*------BUTTON------*/
+
 form #btn{
 	width:260px;
 	height:35px;
@@ -180,25 +183,24 @@ form #btn{
 	background: #007AAD;
 	font-size: 18px;
 	color:#ffffff;
-	-moz-box-shadow:4px 4px rgba(200, 200, 200, 1);
-	-webkit-box-shadow:4px 4px  rgba(200, 200, 200, 1);
-	box-shadow: 4px 4px  rgba(200, 200, 200, 1);
+	-moz-box-shadow:4px 4px rgba(210, 210, 210, 1);
+	-webkit-box-shadow:4px 4px  rgba(210, 210, 210, 1);
+	box-shadow: 3px 4px  rgba(210, 210, 210, 1);
     font-family: twist-font;
     letter-spacing: 1px;
     border: 0px;
     margin-top: 20px;
     cursor: pointer;
-
 }
 
 form #btn:hover{
-	 -moz-box-shadow: #6E7849 0px 0px 5px;
+  -moz-box-shadow: #6E7849 0px 0px 5px;
   -moz-transition: all 0.1s ease;
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   -webkit-box-shadow: #6E7849 0 0 5px;
   -webkit-transition: all 0.5s ease;
-   background-color: #007AAD;
+  background-color: #007AAD;
   background-image: -moz-linear-gradient(90deg, #0794cf, #007AAD);
   background-image: -ms-linear-gradient(90deg, #0794cf, #007AAD);
   background-image: -o-linear-gradient(90deg, #0794cf, #007AAD);
@@ -206,4 +208,14 @@ form #btn:hover{
   background-image: linear-gradient(90deg, #0794cf, #007AAD);
   box-shadow: #6E7849 0px 0px 5px;
   transition: all 0.1s ease;
-};
+}
+
+/*------FOOTER------*/
+	
+footer{
+	background: #161616;
+	border-top: 8px solid #c3c3c3;
+	padding: 10px 0px 30px 45px;
+	height: 20px;
+	color:#505050;
+	font-family: "Arial",sans-serif;

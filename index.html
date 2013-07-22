@@ -2,14 +2,21 @@
 <html>
 	<head>
 	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
 		<link rel="stylesheet" href="css/global.css">
-		<link href="js/global.js">
+		<link rel="stylesheet" media="screen and (max-device-width:480px)" href="css/global_small.css" />
 		<title>Twist Image HTML Test</title>
 	</head>
 	<body>
 	    <section class="wrapper">
 			<div id="header">
-				 <img src="images/l_ti.png">
+				 <a href=""><img src="images/l_ti.png"></a>
 				 <article>
 					<header>
 						 <h1>You could <strong>win</strong> a tour of our office in <em>London</em></h1>
@@ -18,32 +25,43 @@
 		 	</div>				 		
 		</section>
 		<section class="wrapper">
-			<div id="intro_left">
-				<header>
-					<h1><strong>You could win...</strong><h1>
-					<h1>A $5000 trip for two to London:</h1>
-					<p>Round-trip airfare for two people<br>
-					   7 night accommodation in downtown London<br>
-					   2 tour tickets of Buckingham Palace<br>
-					   $1000 spending money<br>
-					   Tour of the TI office and lunch at Vivat Bacchus</p>
-					 <h1>Or, $100 gift certificate </h1>  
-				</header>
+			<div id="box">
+				<div id="intro_left">
+					<header>
+						<h1><strong>You could win...</strong><h1>
+						<h1>A $5000 trip for two to London:</h1>
+						<p>Round-trip airfare for two people<br>
+						   7 night accommodation in downtown London<br>
+						   2 tour tickets of Buckingham Palace<br>
+						   $1000 spending money<br>
+						   Tour of the TI office and lunch at Vivat Bacchus</p>
+						 <h1>Or, $100 gift certificate </h1>  
+					</header>
+				</div>
+				<div id="form">
+					<header>
+		                 <h1><strong>Enter for your</strong></h1>
+		                 <h1><strong>chance to win</strong></h1>
+					</header>
+					<form action="" method="">
+						<article>
+							<label>Your Name</label></br>
+							<input type="text" /></br>
+						</article>	
+						<ul id='conditions'>
+							<li>
+								<input type="checkbox" id="terms" /> I have read and agree to the <strong>Contest Rules.</strong>
+							</li>
+						</ul>
+						<input type="submit" value="Enter" id="btn">
+	                </form>
+				</div>
 			</div>
-			<div id="form">
-				<header>
-                 <h1><strong>Enter for your</strong></h1>
-                 <h1><strong>chance to win</strong></h1>
-				</header>
-				<form action="index.html">
-				<article>
-				<label>Your Name</label></br>
-				<input type="text" /></br>
-				</article>	
-				<input type="checkbox"/> I have read and agree to the <strong>Contest Rules.</strong>
-				<input type="submit" value="Enter" id="btn">
-                </Form>
-			</div>
-		</section>
+			<FOOTER>
+	             <p>&#169 copyright 2013 Twist Image</p>
+			</FOOTER>
+	   </section>	 
+		<script src="js/jquery.js"></script>
+		<script src="js/global.js"></script>	
 	</body>
 </html>
