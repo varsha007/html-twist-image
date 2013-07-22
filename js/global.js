@@ -5,3 +5,10 @@ $(document).ready(function(){
 	 	}
 	});
 });
+
+function emptyText(){
+	var textbox = $.trim($('#uname').val())
+	if (textbox == ""){
+		alert("Please enter your name.");
+	}
+}
